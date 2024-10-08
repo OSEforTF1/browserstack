@@ -6,12 +6,15 @@
   "scripts": {
     "sample-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js",
     "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
-    "postinstall": "npm update browserstack-node-sdk"
+    "postinstall": "npm update browserstack-node-sdk",
+    "cucumber": "npx cucumber-js test",
+    "farm": "npx browserstack-node-sdk playwright test --config=./cucumber.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
     "@playwright/test": "latest",
     "browserstack-node-sdk": "latest"
   }
