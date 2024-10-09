@@ -8,7 +8,7 @@
     "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
     "postinstall": "npm update browserstack-node-sdk",
     "cucumber": "npx cucumber-js test",
-    "farm": "npx browserstack-node-sdk playwright test --config=./cucumber.json"
+    "farm": "npx browserstack-node-sdk cucumber-js test --config=./cucumber.json"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.0.1",
     "@playwright/test": "latest",
+    "browserstack-local": "^1.5.5",
     "browserstack-node-sdk": "latest"
   }
 }
